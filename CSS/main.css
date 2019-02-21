@@ -21,7 +21,7 @@ body
 .container input[type=text]
 {
   padding-left: 10px;
-  width: 250px;
+  width: 70%;
   height: 50px;
   border-radius: 10%;
   background: #848484;
@@ -31,8 +31,8 @@ body
 }
 .container input[type=date]
 {
-  width: 150px;
-  height: 50px;
+  width: 30%;
+  height: 60px;
   border-radius: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -44,7 +44,7 @@ body
 }
 #area
 {
-width: 317px;
+  width: 70%;
   height: 74px;
    background: #848484;
   border-style: none;
@@ -99,6 +99,6 @@ width: 317px;
   font-size: 20px;
   margin-bottom: 10px;
   text-align: center;
-  width: 90%;
+  width:90%;
   word-wrap: anywhere
 }
