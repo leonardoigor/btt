@@ -22,17 +22,64 @@ $( ".box-container" ).ready(function() {
         $(blue).append(full2);
         $(blue).append(full3);
         $(blue).append(full4);
+       
+        
+        localStorage.setItem(textElement,textElement);
+        localStorage.setItem(dateElement,dateElement);
+        localStorage.setItem(textAreaElement,textAreaElement);
+        
+        // localStorage.setItem(full4,full4);
+
+        // $( ".box-container" ).show();
 
         $('.box-container').show('slow');
     });
-    $('.discriptblue').ready(function()
-    {
-        console.log("aa");
-    });
+    
     
     
         
     
-  
-   
-  });
+  $('document').ready(function () 
+  {
+      var div=document.getElementById('blue');
+    
+      console.log(localStorage.length);
+    if(localStorage!=null)
+    { ;
+        var archive=[];
+      
+        for (var i = 0; i<localStorage.length; i++) {
+            archive[i] = localStorage.getItem(localStorage.key(i));
+            var full1=$('<span class=discriptblue></span>').text(archive[i]);                    
+            
+            console.log(archive[i]);
+          
+            var total=i % 2 ;console.log(total % 2 == 0);
+            var todos=div.children;
+            
+            $(blue).append(full1);
+            if(total % 2 == 0){
+               
+                console.log('total');
+                if(todos.length>0)
+                 {       
+                var full4=("<hr>");
+                $( ".box-container" ).show();
+                $(blue).append(full4);
+               
+                }
+            }
+        }
+        console.log(todos);
+        console.log('a');
+        
+    }
+    else{console.log('false')}
+    
+    // console.log(localStorage.full1); 
+});   
+});
+// var full1=$('<span class=discriptblue></span>').text(archive[i]);                    
+// $(blue).append(full1);
+// $( ".box-container" ).show();
+
